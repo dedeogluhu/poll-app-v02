@@ -1,2 +1,3 @@
-# poll-app-v02
+# Poll App
+
 My framework/technology trials
