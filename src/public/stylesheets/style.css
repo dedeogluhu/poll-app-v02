@@ -1,8 +1,37 @@
+:root {
+  --gray-color: #E7EFF6;
+  --inside-gray: #F6FAFD;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: var(--gray-color);
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.main-wrap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post{
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
 }
