@@ -1,5 +1,5 @@
 let examplePost = {
-    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
+    header: '1-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
         'first choice',
         'second choice',
@@ -9,7 +9,7 @@ let examplePost = {
 };
 
 let examplePost2 = {
-    header: '2Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
+    header: '2-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
         'first choice2',
         'second choice2',
@@ -19,7 +19,7 @@ let examplePost2 = {
 };
 
 let examplePost3 = {
-    header: '3Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
+    header: '3-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
         'first choice3',
         'second choice3',
@@ -29,12 +29,14 @@ let examplePost3 = {
 };
 
 let examplePost4 = {
-    header: '4Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
+    header: '4-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
         'first choice4',
         'second choice4',
         'third choice4',
-        'fourth choice4'
+        'fourth choice4',
+        'fifth choice4',
+        'sixth choice4',
     ]
 };
 
@@ -50,13 +52,20 @@ let postList = '';
 for (let example of examplePostList) {
     let choices = '';
 
-    for (let choice of example.choices) {
+    let exampleChoices = example.choices;
+
+    if (exampleChoices.length > 4) {
+        let extraCount = exampleChoices.length - 4
+        exampleChoices[3] += ` and ${extraCount} more`;
+    }
+
+    for (let i = 0; i < 4; i++) {
         let choiceTemplate = `
-    <button class="choice">
-        <span class='choice-sign'>X</span>
-        ${choice}
-    </button>
-`;
+            <button class="choice">
+                <span class='choice-sign'>X</span>
+                ${exampleChoices[i]}
+            </button>
+        `;
         choices += choiceTemplate;
     }
 
