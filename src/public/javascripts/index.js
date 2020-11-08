@@ -1,42 +1,42 @@
 let examplePost = {
     header: '1-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
-        'first choice',
-        'second choice',
-        'third choice',
-        'fourth choice'
+        'First choice',
+        'Second choice',
+        'Third choice',
+        'Fourth choice'
     ]
 };
 
 let examplePost2 = {
     header: '2-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
-        'first choice2',
-        'second choice2',
-        'third choice2',
-        'fourth choice2'
+        'First choice2',
+        'Second choice2',
+        'Third choice2',
+        'Fourth choice2'
     ]
 };
 
 let examplePost3 = {
     header: '3-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
-        'first choice3',
-        'second choice3',
-        'third choice3',
-        'fourth choice3'
+        'First choice3',
+        'Second choice3',
+        'Third choice3',
+        'Fourth choice3'
     ]
 };
 
 let examplePost4 = {
     header: '4-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
     choices: [
-        'first choice4',
-        'second choice4',
-        'third choice4',
-        'fourth choice4',
-        'fifth choice4',
-        'sixth choice4',
+        'First choice4',
+        'Second choice4',
+        'Third choice4',
+        'Fourth choice4',
+        'Fifth choice4',
+        'Sixth choice4',
     ]
 };
 
