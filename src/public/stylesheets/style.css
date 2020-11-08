@@ -31,6 +31,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .post{
@@ -38,11 +39,12 @@ ul{
   border-radius: 15px;
   padding: 2rem;
   max-width: 50rem;
+  margin: 1rem 0;
 }
 
 .post-header{
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .choice-list{
