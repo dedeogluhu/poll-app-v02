@@ -1,5 +1,7 @@
 :root {
   --gray-color: #E7EFF6;
+  --gray-color-lighter: #f2f5f7;
+  --gray-color-even-lighter: #fcfcfc;
   --inside-gray: #F6FAFD;
 }
 
@@ -11,6 +13,7 @@
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   background-color: var(--gray-color);
 }
 
@@ -34,4 +37,45 @@ ul{
   background-color: #ffffff;
   border-radius: 15px;
   padding: 2rem;
+  max-width: 50rem;
+}
+
+.post-header{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.choice-list{
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.choice{
+  display: block;
+  margin: 0.5rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.8rem 0.5rem 0.8rem 5px;
+  background-color: var(--gray-color);
+  border: 0.5px solid white;
+  border-radius: 5px;
+}
+
+.choice:hover{
+  background-color: var(--gray-color-lighter);
+  border: 0.5px solid var(--gray-color);
+}
+
+.choice:focus{
+  outline: none;
+  background-color: #84fd84/*var(--gray-color-even-lighter);*/
+}
+
+.choice-sign{
+  padding: 0.3rem 0.5rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-right: 0.7rem;
+  font-weight: 500;
+  box-shadow: 2px 2px 5px 0.1px gray;
 }
