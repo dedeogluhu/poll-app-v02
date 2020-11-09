@@ -5,7 +5,8 @@ let examplePost = {
         'Second choice',
         'Third choice',
         'Fourth choice'
-    ]
+    ],
+    date: new Date(2018, 11, 24, 10, 33, 30, 0)
 };
 
 let examplePost2 = {
@@ -15,7 +16,8 @@ let examplePost2 = {
         'Second choice2',
         'Third choice2',
         'Fourth choice2'
-    ]
+    ],
+    date: new Date(2017, 11, 24, 10, 33, 30, 0)
 };
 
 let examplePost3 = {
@@ -25,7 +27,8 @@ let examplePost3 = {
         'Second choice3',
         'Third choice3',
         'Fourth choice3'
-    ]
+    ],
+    date: new Date(2019, 11, 24, 10, 33, 30, 0)
 };
 
 let examplePost4 = {
@@ -37,7 +40,8 @@ let examplePost4 = {
         'Fourth choice4',
         'Fifth choice4',
         'Sixth choice4',
-    ]
+    ],
+    date: Date.now()
 };
 
 let examplePostList = [
@@ -46,6 +50,10 @@ let examplePostList = [
     examplePost3,
     examplePost4
 ];
+
+examplePostList.sort((x, y) => {
+    return y.date - x.date;
+});
 
 let postList = '';
 
