@@ -2,10 +2,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const mongoose = require('mongoose');
-const config = require('./config');
 
 var indexRouter = require('./routes/index');
+var addRouter = require('./routes/add');
 
 var app = express();
 
@@ -16,5 +15,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/add', addRouter);
 
 module.exports = app;
