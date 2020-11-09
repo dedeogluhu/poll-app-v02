@@ -1,0 +1,31 @@
+.nav{
+    background-color: white;
+    height: 50px;
+}
+
+.nav-container{
+    height: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.brand{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    color: #6610f2;
+}
+
+.brand:hover{
+    color: #6f42c1;
+}
