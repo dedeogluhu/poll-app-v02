@@ -1,0 +1,18 @@
+.btn{
+    padding: 0.6rem 1rem;
+    border-radius: 30px; 
+    border: none;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn-primary{
+   background-color: var(--primary-color);
+   color: white;
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-color-darker);
+}
