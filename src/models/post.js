@@ -5,9 +5,9 @@ const ObjectId = Schema.ObjectId;
 
 const PostSchema = new Schema({
     id: ObjectId,
-    header: String,
-    choices: Array,
-    date: Date
+    header: { type: String, required: true },
+    choices: { type: [String], required: true },
+    date: { type: Date, required: true }
 });
 
 module.exports = mongoose.model('Post', PostSchema);
