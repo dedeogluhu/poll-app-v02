@@ -2,7 +2,7 @@
 
 - I wanted to experience various backend and frontend technologies so i started with this project. 
 
-- My goal is to make the similar projects with all of them and see the differences.
+- My goal is to make the similar projects with all of them and see the differences between the technologies.
 
 - Started with [this](https://github.com/dedeogluhu/poll-app-v01) one with express using pug and sass engines but abandoned it due to reasons shown in that repository.
     
