@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { mongoUri } = require('../config');
+const PostModel = require('../models/post');
 var express = require('express');
 var router = express.Router();
 
@@ -16,11 +17,9 @@ async function connectMongoose() {
 
 connectMongoose();
 
-
-
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index');
+  res.sendFile('index');
 });
 
 module.exports = router;
