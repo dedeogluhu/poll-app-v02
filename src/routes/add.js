@@ -1,9 +1,10 @@
+var path = require('path');
 var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.send('Post adding screen');
+    res.sendFile(path.resolve(__dirname, '../public/add.html'));
 });
 
 module.exports = router;
