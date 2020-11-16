@@ -1,0 +1,11 @@
+.add-screen{
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 50rem;
+    margin: 1rem 0;
+}
+
+.add-question{
+    display: block;
+}
