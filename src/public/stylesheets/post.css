@@ -42,7 +42,7 @@
   
   .choice:focus{
     outline: none;
-    background-color: #84fd84/*var(--gray-color-even-lighter);*/
+    background-color: var(--lime-color);
   }
   
   .choice-sign{
