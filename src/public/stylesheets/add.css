@@ -86,7 +86,7 @@
     padding: .3rem .6rem;
     background-color: var(--success-color);
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .add-post{
