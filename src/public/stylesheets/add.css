@@ -32,15 +32,18 @@
     width: 100%;
     border-radius: 10px;
     margin: 1rem;
+    border: 2px solid gray;
 }
 
 .add-question,
 .add-choice-input{
     padding: .5rem 1rem;
-    border: 2px solid gray
 }
 
-.add-choice-input{
+.add-choice-input{  
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: gray;
     width: 100%;
     margin: 1rem 0 1rem 0;
     border-radius: 10px 0 0 10px;
