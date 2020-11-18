@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
   <script src="/javascripts/add.js" defer></script>
+  <script src="/javascripts/utils.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
   </nav>
   <div class="main-wrap add-wrap">
     <div class="add-screen">
-      <form class="add-form">
+      <form class="add-form" onsubmit="return preventDefault(event)">
         <label for="add-question" class="add-label">Question:</label>
         <input id="add-question" type="text" class="add-question" placeholder="Tell us your question...">
         <label for="add-choice" class="add-label">Choices:</label>
