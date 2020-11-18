@@ -93,6 +93,8 @@
 }
 
 .add-label{
-    text-align: start;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
     margin-top: 1rem;
 }
