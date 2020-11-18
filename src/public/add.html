@@ -28,14 +28,27 @@
         <div class="add-choice-div">
           <input id="add-choice" type="text" class="add-choice-input"
             placeholder="Tell us the choices of your question...">
-          <button class="add-choice-button btn">Add Choice</button>
+          <button class="add-choice-button btn" onclick="alert('Added choice')">
+            Add Choice
+          </button>
         </div>
         <div class="add-choice-list">
-          <span class="add-choice-list-item">Hello</span>
-          <span class="add-choice-list-item">Hello2</span>
-          <span class="add-choice-list-item">Hello3</span>
+          <span class="add-choice-list-item">
+            Hello
+            <a onclick="alert('deleted')" href="#">X</a>
+          </span>
+          <span class="add-choice-list-item">
+            Hello2
+            <a onclick="alert('deleted')" href="#">X</a>
+          </span>
+          <span class="add-choice-list-item">
+            Hello3
+            <a onclick="alert('deleted')" href="#">X</a>
+          </span>
         </div>
-        <button type="submit" class="add-post btn">Post</button>
+        <button type="submit" class="add-post btn" onclick="alert('Posted Question')">
+          Post
+        </button>
       </form>
     </div>
   </div>
