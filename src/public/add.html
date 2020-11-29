@@ -4,8 +4,8 @@
   <title>Pollzz | Add</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
-  <script src="/javascripts/add.js" defer></script>
   <script src="/javascripts/utils.js" defer></script>
+  <script src="/javascripts/add.js" defer></script>
 </head>
 
 <body>
@@ -21,32 +21,19 @@
   </nav>
   <div class="main-wrap add-wrap">
     <div class="add-screen">
-      <form class="add-form" onsubmit="return preventDefault(event)">
+      <form id="add-form" class="add-form">
         <label for="add-question" class="add-label">Question:</label>
         <input id="add-question" type="text" class="add-question" placeholder="Tell us your question...">
         <label for="add-choice" class="add-label">Choices:</label>
         <div class="add-choice-div">
-          <input id="add-choice" type="text" class="add-choice-input"
-            placeholder="Tell us the choices of your question...">
-          <button class="add-choice-button btn" onclick="alert('Added choice')">
+          <input id="add-choice" type="text" class="add-choice-input" placeholder="Give us the choices...">
+          <button class="add-choice-button btn" id="add-choice-button">
             Add Choice
           </button>
         </div>
-        <div class="add-choice-list">
-          <span class="add-choice-list-item">
-            Hello
-            <a onclick="alert('deleted')" href="#">X</a>
-          </span>
-          <span class="add-choice-list-item">
-            Hello2
-            <a onclick="alert('deleted')" href="#">X</a>
-          </span>
-          <span class="add-choice-list-item">
-            Hello3
-            <a onclick="alert('deleted')" href="#">X</a>
-          </span>
+        <div class="add-choice-list" id="add-choice-list">
         </div>
-        <button type="submit" class="add-post btn" onclick="alert('Posted Question')">
+        <button id="add-post" type="submit" class="add-post btn">
           Post
         </button>
       </form>

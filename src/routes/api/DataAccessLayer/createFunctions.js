@@ -8,7 +8,7 @@ async function createPost(req, res) {
     });
 
     try {
-        const postSaved = await post.save()
+        const postSaved = await post.save();
         res.send(postSaved);
     } catch (error) {
         console.log(error);
