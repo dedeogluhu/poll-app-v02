@@ -1,9 +1,9 @@
-let addForm = document.querySelector('#add-form');
-let addQuestionInput = document.querySelector('#add-question');
-let addChoicesInput = document.querySelector('#add-choice');
-let addChoiceButton = document.querySelector('#add-choice-button');
-let addPostButton = document.querySelector('#add-post');
-let choicesDiv = document.querySelector('#add-choice-list');
+const addForm = document.querySelector('#add-form');
+const addQuestionInput = document.querySelector('#add-question');
+const addChoicesInput = document.querySelector('#add-choice');
+const addChoiceButton = document.querySelector('#add-choice-button');
+const addPostButton = document.querySelector('#add-post');
+const choicesDiv = document.querySelector('#add-choice-list');
 let choicesArray = [];
 
 addForm.addEventListener('submit', (e) => { return preventDefault(e) });
