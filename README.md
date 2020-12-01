@@ -1,8 +1,8 @@
 ## Introduction
 
-- I wanted to experience various backend and frontend technologies so i started with this project. 
+- I wanted to experience various backend and frontend technologies and see the differences between them.
 
-- My goal is to make the similar projects with all of them and see the differences between the technologies.
+- I am going to make projects with same concepts and see how they work out with different technologies.
 
 - Started with [this](https://github.com/dedeogluhu/poll-app-v01) one with express using pug and sass engines but abandoned it due to reasons shown in that repository.
     
