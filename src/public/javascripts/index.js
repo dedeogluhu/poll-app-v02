@@ -78,10 +78,10 @@ function setPosts(list) {
 
         let postHtml = `
         <div class="post">
-        <p class="post-header">${post.question}</p>
-        <div class="choice-list">
-        ${choicesHtml}
-        </div>
+            <p class="post-header">${post.question}</p>
+            <div class="choice-list">
+                ${choicesHtml}
+            </div>
         </div>
         `;
 
