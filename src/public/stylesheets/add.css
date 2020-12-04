@@ -79,11 +79,11 @@
     padding: .5rem;
     width: 100%;
     text-align: center;
-    overflow: hidden;
 }
 
 .add-choice-list-item{
-    margin-right: .5rem;
+    display: inline-block;
+    margin: 1rem .5rem;
     padding: .3rem .6rem;
     background-color: var(--success-color);
     color: white;
