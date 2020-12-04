@@ -47,7 +47,6 @@
   }
 
   .choice-selected{
-    outline: none;
     background-color: var(--lime-color);
   }
   
