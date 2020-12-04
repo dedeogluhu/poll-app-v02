@@ -45,6 +45,11 @@
     outline: none;
     background-color: var(--lime-color);
   }
+
+  .choice-selected{
+    outline: none;
+    background-color: var(--lime-color);
+  }
   
   .choice-sign{
     padding: 0.3rem 0.5rem;
