@@ -26,6 +26,8 @@
 //     return y.date - x.date;
 // });
 
+
+const choiceButtons = document.querySelectorAll('.choice');
 const postListDiv = document.querySelector('#post-list');
 let postList = [];
 let postListHtml = '';
@@ -33,6 +35,10 @@ let postListHtml = '';
 async function main() {
     await getPosts();
     setPosts(postList);
+}
+
+function changeColor(event) {
+    event.classList.add('choice-selected');
 }
 
 async function getPosts() {
@@ -68,9 +74,9 @@ function setPosts(list) {
 
         for (let i = 0; i < 4; i++) {
             let choiceTemplate = `
-            <button class="choice">
-            <span class='choice-sign'>X</span>
-            ${postChoices[i]}
+            <button class="choice" onclick="changeColor(this)">
+                <span class='choice-sign'>X</span>
+                ${postChoices[i]}
             </button>
             `;
             choicesHtml += choiceTemplate;
