@@ -4,7 +4,7 @@ const addChoicesInput = document.querySelector('#add-choice');
 const addChoiceButton = document.querySelector('#add-choice-button');
 const addPostButton = document.querySelector('#add-post');
 const choicesDiv = document.querySelector('#add-choice-list');
-let choicesArray = [];
+let choicesObject = {};
 
 addForm.addEventListener('submit', (e) => { return preventDefault(e) });
 addChoiceButton.addEventListener('click', addChoice);
@@ -12,7 +12,7 @@ addPostButton.addEventListener('click', sendPost);
 
 function addChoice() {
     let choice = addChoicesInput.value;
-    choicesArray.push(choice);
+    choicesObject[choice] = 0;
 
     if (!choice) { addChoicesInput.focus(); return; }
 
@@ -32,13 +32,13 @@ function addChoice() {
 async function sendPost() {
     await axios.post('/api/posts', {
         question: addQuestionInput.value,
-        choices: choicesArray
+        choices: choicesObject
     })
         .then(response => console.log(response.data))
         .catch(error => console.log(error));
 
     addQuestionInput.value = '';
     choicesDiv.innerHTML = '';
-    choicesArray = [];
+    choicesObject = {};
 }
 
