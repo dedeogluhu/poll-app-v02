@@ -39,9 +39,12 @@ async function main() {
 
 function changeColor(element) {
     let otherChildren = element.parentElement.children;
+    element.style.backgroundColor = '#84fd84';
 
     for (let item of otherChildren) {
         item.disabled = true;
+        let buttonChildren = item.children;
+        buttonChildren[buttonChildren.length - 1].style.visibility = 'visible';
     }
 }
 
@@ -72,14 +75,15 @@ function setPosts(list) {
 
         if (postChoices.length > 4) {
             let extraCount = postChoices.length - 4
-            postChoices[3] += ` and ${extraCount} more`;
+            postChoices[3].text += ` and ${extraCount} more`;
         }
 
         for (let i = 0; i < 4; i++) {
             let choiceTemplate = `
             <button class="choice" onclick="changeColor(this)">
                 <span class='choice-sign'>X</span>
-                ${postChoices[i]}
+                ${postChoices[i].text}
+                <span class='choice-vote-count'>${postChoices[i].voteCount}</span>
             </button>
             `;
             choicesHtml += choiceTemplate;
