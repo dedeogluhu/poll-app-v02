@@ -37,8 +37,12 @@ async function main() {
     setPosts(postList);
 }
 
-function changeColor(event) {
-    event.classList.add('choice-selected');
+function changeColor(element) {
+    let otherChildren = element.parentElement.children;
+
+    for (let item of otherChildren) {
+        item.disabled = true;
+    }
 }
 
 async function getPosts() {
@@ -46,7 +50,6 @@ async function getPosts() {
         .then(function (response) {
             for (let element of response.data) {
                 postList.push(element);
-                console.log(element);
             }
         })
         .catch(error => console.log(error));
