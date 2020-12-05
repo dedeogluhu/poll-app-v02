@@ -58,3 +58,9 @@
     font-weight: 500;
     box-shadow: 2px 2px 5px 0.1px gray;
   }
+
+  .choice-vote-count{
+    visibility: hidden;
+    float: right;
+  }
+
