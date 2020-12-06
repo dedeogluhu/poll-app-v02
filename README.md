@@ -8,6 +8,10 @@
     
 - I am using Html, Css, Javascript, Expressjs and MongoDB in this version. 
 
+## Screenshots
+![screenshot1](https://user-images.githubusercontent.com/64230499/101285464-573c8a80-37f6-11eb-98b2-c91f2fe56fdf.png)
+![screenshot2](https://user-images.githubusercontent.com/64230499/101285466-586db780-37f6-11eb-9880-50898ec7a3ff.png)
+
 ## Getting Started
 
 #### Prepare the project
