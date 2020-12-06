@@ -38,10 +38,17 @@ async function main() {
 }
 
 function changeColor(element) {
-    let otherChildren = element.parentElement.children;
     element.style.backgroundColor = '#84fd84';
 
-    for (let item of otherChildren) {
+    let allButtons = element.parentElement.children;
+
+    //let orderOfElement = allButtons.indexOf(element);
+    //let id = postList[orderOfElement]._id;
+    //let objectToUpdate = postList[orderOfElement];
+    //objectToUpdate.choices[orderOfElement].voteCount += 1;
+    //axios.patch(`/${id}`, objectToUpdate);
+
+    for (let item of allButtons) {
         item.disabled = true;
         let buttonChildren = item.children;
         buttonChildren[buttonChildren.length - 1].style.visibility = 'visible';
