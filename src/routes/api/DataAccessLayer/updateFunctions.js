@@ -5,9 +5,10 @@ async function updateById(req, res) {
         const postUpdated = await Post.findByIdAndUpdate(req.params.id, {
             question: req.body.question,
             choices: req.body.choices
-        }, {
-            new: true
-        });
+        },
+            {
+                new: true
+            });
         res.send(postUpdated);
     } catch (error) {
         console.log(error);
