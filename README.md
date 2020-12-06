@@ -11,8 +11,8 @@
 - Results : 
     - Vanilla js is hard as always. Most of the time i couldn't think of a solution to my problems.
     - Looks like scss wasn't that useless.
-    - I missed frontend frameworks so much. Even React.
-    - Mongo and Express could be the best ones of backend technologies. Going to learn about this in the next projects.  
+    - I missed frontend frameworks so much. Even React...
+    - Mongo and Express could be the best ones of backend technologies. Going to learn more about this in the next projects.  
 
 ## Screenshots
 ![screenshot1](https://user-images.githubusercontent.com/64230499/101285464-573c8a80-37f6-11eb-98b2-c91f2fe56fdf.png)
