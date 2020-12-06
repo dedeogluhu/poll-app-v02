@@ -90,7 +90,7 @@ function setPosts(list) {
             <button class="choice" onclick="changeColor(this)">
                 <span class='choice-sign'>X</span>
                 ${postChoices[i].text}
-                <span class='choice-vote-count'>${postChoices[i].voteCount}</span>
+                <span class='choice-vote-count'>${postChoices[i].voteCount} votes</span>
             </button>
             `;
             choicesHtml += choiceTemplate;
