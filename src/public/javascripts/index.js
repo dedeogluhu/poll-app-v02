@@ -1,32 +1,3 @@
-// let examplePost = {
-//     header: '1-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
-//     choices: [
-//         'First choice',
-//         'Second choice',
-//         'Third choice',
-//         'Fourth choice'
-//     ],
-//     date: new Date(2018, 11, 24, 10, 33, 30, 0)
-// };
-// let examplePost2 = {
-//     header: '2-) Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nemo? Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.',
-//     choices: [
-//         'First choice2',
-//         'Second choice2',
-//         'Third choice2',
-//         'Fourth choice2'
-//     ],
-//     date: new Date(2017, 11, 24, 10, 33, 30, 0)
-// };
-// let examplePostList = [
-//     examplePost,
-//     examplePost2,
-// ];
-// examplePostList.sort((x, y) => {
-//     return y.date - x.date;
-// });
-
-
 const choiceButtons = document.querySelectorAll('.choice');
 const postListDiv = document.querySelector('#post-list');
 let postList = [];
