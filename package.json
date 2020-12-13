@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "cd src && node ./bin/www",
-    "dev": "cd src && nodemon ./bin/www"
+    "dev": "cd src && nodemon ./bin/www",
+    "test": "jest"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
