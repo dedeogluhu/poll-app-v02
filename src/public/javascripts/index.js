@@ -42,12 +42,6 @@ function changeColor(element) {
 
     let allButtons = element.parentElement.children;
 
-    //let orderOfElement = allButtons.indexOf(element);
-    //let id = postList[orderOfElement]._id;
-    //let objectToUpdate = postList[orderOfElement];
-    //objectToUpdate.choices[orderOfElement].voteCount += 1;
-    //axios.patch(`/${id}`, objectToUpdate);
-
     for (let item of allButtons) {
         item.disabled = true;
         let buttonChildren = item.children;
