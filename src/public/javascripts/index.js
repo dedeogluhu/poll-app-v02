@@ -1,4 +1,3 @@
-const choiceButtons = document.querySelectorAll('.choice');
 const postListDiv = document.querySelector('#post-list');
 let postList = [];
 let postListHtml = '';
@@ -77,3 +76,10 @@ function setPosts(list) {
 }
 
 main();
+
+module.exports = {
+    changeColor,
+    getPosts,
+    setPosts,
+    sortPosts
+}
