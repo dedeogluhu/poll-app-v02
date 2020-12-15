@@ -33,6 +33,7 @@ function sortPosts(list) {
     list.sort((x, y) => {
         return y.date - x.date;
     });
+    return list;
 }
 
 function setPosts(list) {
