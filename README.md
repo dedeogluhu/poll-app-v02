@@ -1,6 +1,6 @@
 ## Introduction
 
-- I wanted to experience various backend and frontend technologies and see the differences between them.
+- I wanted to experience various backend and frontend technologies and see the differences between them myself.
 
 - I am going to make projects with same concepts and see how they work out with different technologies.
 
